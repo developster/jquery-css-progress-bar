@@ -9,12 +9,14 @@ Usage
 =====
 
 Initialize:
-$("#myProgressBar").cssProgressBar();
+
+`$("#myProgressBar").cssProgressBar();`
 
 Update your progress:
-$("#myProgressBar").cssProgressBar("update", 99);
+
+`$("#myProgressBar").cssProgressBar("update", 99);`
 
 Author
 ======
 
-Ciubotaru Octavian
+Octavian Ciubotaru
