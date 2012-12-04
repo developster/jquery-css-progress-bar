@@ -2,13 +2,21 @@
 	
 	var methods = {
 		init : function (options) {
+		    var applied = this.data("cssProgressBar");
+		    if (applied) {
+		        return this;
+		    }
+		    this.data("cssProgressBar", true);
+		    
 			this.addClass("ui-progress-bar");
 			this.addClass("ui-container");
 			this.addClass("transition");
+			
 			var progressDiv = document.createElement('div');
 			progressDiv.setAttribute("class", "ui-progress");
 			progressDiv.setAttribute("style", "width: 0%;");
 			this.append(progressDiv);
+			
 			return this;
 		},
 		update : function (perc) {
